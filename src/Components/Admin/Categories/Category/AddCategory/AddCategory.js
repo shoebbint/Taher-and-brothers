@@ -12,7 +12,7 @@ const AddCategory = () => {
         const category = { name,img, description };
         console.log(category);
         //send data to server
-        const response = fetch("http://localhost:5000/addCategory", {
+        const response = fetch("https://taher-brothers-server.vercel.app/addCategory", {
             method: "POST", // or 'PUT'
             headers: {
                 "Content-Type": "application/json",

@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 const AddSubCategory = () => {
     const [categories, setCategories] = useState([]);
 useEffect(() => {
-    fetch('http://localhost:5000/categories')
+    fetch('https://taher-brothers-server.vercel.app/categories')
         .then(res => res.json())
         .then(data => setCategories(data));
 }, [])
@@ -20,7 +20,7 @@ useEffect(() => {
         const category = { categoryId,subcategoryname, img, description };
         console.log(category);
         //send data to server
-        const response = fetch("http://localhost:5000/addsubcategory", {
+        const response = fetch("https://taher-brothers-server.vercel.app/addsubcategory", {
             method: "POST", // or 'PUT'
             headers: {
                 "Content-Type": "application/json",

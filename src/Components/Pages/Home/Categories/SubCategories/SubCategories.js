@@ -8,7 +8,7 @@ const id=location.pathname.split("/")[2];
     console.log((id))
     const [subCategories, setSubCategories] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/subcategories')
+        fetch('https://taher-brothers-server.vercel.app/subcategories')
             .then(res => res.json())
             .then(data => setSubCategories(data));
     }, [])

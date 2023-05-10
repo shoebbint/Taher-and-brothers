@@ -3,13 +3,13 @@ import React, { useEffect, useRef, useState } from 'react';
 const AddProduct = () => {
     const [categories, setCategories] = useState([]);
 useEffect(() => {
-    fetch('http://localhost:5000/categories')
+    fetch('https://taher-brothers-server.vercel.app/categories')
         .then(res => res.json())
         .then(data => setCategories(data));
 }, [])
     const [subCategories, setSubCategories] = useState([]);
 useEffect(() => {
-    fetch('http://localhost:5000/subcategories')
+    fetch('https://taher-brothers-server.vercel.app/subcategories')
         .then(res => res.json())
         .then(data => setSubCategories(data));
 }, [])
@@ -32,7 +32,7 @@ useEffect(() => {
         const product = { name,price,brandname,categoryId,subCategoryId, img, description };
         console.log(product);
         //send data to server
-        const response = fetch("http://localhost:5000/addproduct", {
+        const response = fetch("https://taher-brothers-server.vercel.app/addproduct", {
             method: "POST", // or 'PUT'
             headers: {
                 "Content-Type": "application/json",
