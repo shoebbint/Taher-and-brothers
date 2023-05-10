@@ -3,9 +3,8 @@ import React from 'react';
 const PopularProducts = () => {
     return (
         <div>
-            <h1>PopularProducts</h1>
             <div className="card w-96 glass">
-  <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="car!"/></figure>
+  <figure><img src="https://i.postimg.cc/8Pshh9VF/a1.jpg" alt="car!"/></figure>
   <div className="card-body">
     <h2 className="card-title">Life hack</h2>
     <p>How to park your car at your garage?</p>

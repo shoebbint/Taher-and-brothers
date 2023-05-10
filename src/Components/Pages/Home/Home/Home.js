@@ -8,10 +8,11 @@ import Section1 from '../Section1/Section1';
 const Home = () => {
     return (
         <div>
-            <h1>This is home</h1>
             <Banner></Banner>
             <Section1></Section1>
+            <h1 className='font-mono text-4xl p-5'>Explore By Categories</h1>
             <Categories></Categories>
+            <h1 className='font-mono text-4xl p-10'>Most Popular Products</h1>
             <PopularProducts></PopularProducts>
             <Brands></Brands>
         </div>
