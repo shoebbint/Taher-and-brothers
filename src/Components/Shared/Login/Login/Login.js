@@ -59,7 +59,7 @@ const Login = () => {
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
 
                         <div className="card-body">
-                            <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Sign Up</h2>
+                            <h2 className="text-gray-900 text-lg font-medium title-font mb-5">Sign Up</h2>
                             <form onSubmit={handleSubmit}>
                                 <div  className="form-control">
                                     <label className="label">
@@ -88,7 +88,7 @@ const Login = () => {
                         </div>
                     </div>
 
-                    <img class=" mask mask-parallelogram object-cover object-center rounded" alt="hero" src={login} />
+                    <img className=" mask mask-parallelogram object-cover object-center rounded" alt="hero" src={login} />
 
                 </div>
             </div>

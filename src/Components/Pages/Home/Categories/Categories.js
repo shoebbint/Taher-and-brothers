@@ -14,7 +14,7 @@ const Categories = () => {
 {
                     categories.map(category => 
           
-<div  className="card  image-full ">
+<div  className="card  image-full" key={category._id}>
   {category?.img &&
   <figure className=''><img src={category.img} alt="Category" /></figure>}
   <div className="bg-transparent card-body items-center text-center mt-80">

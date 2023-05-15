@@ -37,8 +37,8 @@ const PageHeader = () => {
       <h1 className="mb-5 text-5xl font-bold">{pageName}</h1>
       <div className="text-sm breadcrumbs">
   <ul>
-  <li> <Link to={"/"}><a>Home</a></Link> </li>
-    <li><a>Documents</a></li> 
+  <li> <Link to={"/"}>Home</Link> </li>
+    <li>Documents</li> 
     <li>{pageName}</li>
   </ul>
 </div>

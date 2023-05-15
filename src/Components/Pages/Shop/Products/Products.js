@@ -38,7 +38,7 @@ const Products = () => {
           <div className="flex flex-wrap -m-4">
             {
               products.map(product =>
-                <div className="p-4 lg:w-1/4 md:w-1/2">
+                <div className="p-4 lg:w-1/4 md:w-1/2" key={product._id}>
                   <div className="h-full flex flex-col items-center text-center">
                     <img alt="team" className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/200x200" />
                     <div className="w-full">

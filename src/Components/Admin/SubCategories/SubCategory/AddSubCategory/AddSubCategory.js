@@ -37,24 +37,24 @@ useEffect(() => {
 
     return (
         <div>
-            <section class="text-gray-600 body-font relative">
-                <div class="container px-5 py-24 mx-auto">
-                    <div class="flex flex-col text-center w-full mb-12">
-                        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Add a Sub Category</h1>
+            <section className="text-gray-600 body-font relative">
+                <div className="container px-5 py-24 mx-auto">
+                    <div className="flex flex-col text-center w-full mb-12">
+                        <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Add a Sub Category</h1>
                     </div>
                     <form onSubmit={handleAddSubCategory} >
-                        <div class="lg:w-1/2 md:w-2/3 mx-auto">
-                            <div class="flex flex-wrap -m-2">
-                                <div class="p-2 w-full">
-                                    <div class="relative">
-                                        <label for="subcategoryname" class="leading-7 text-sm text-gray-600">Sub Category Name</label>
-                                        <input ref={subCategoryRef} type="text" id="subcategoryname" name="subcategoryname" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                        <div className="lg:w-1/2 md:w-2/3 mx-auto">
+                            <div className="flex flex-wrap -m-2">
+                                <div className="p-2 w-full">
+                                    <div className="relative">
+                                        <label htmlFor="subcategoryname" className="leading-7 text-sm text-gray-600">Sub Category Name</label>
+                                        <input ref={subCategoryRef} type="text" id="subcategoryname" name="subcategoryname" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
                                     </div>
                                 </div>
-                                <div class="p-2 w-full">
-                                    <div class="relative">
-                                        <label for="categoryid" class="leading-7 text-sm text-gray-600">Select Category</label>
-                                        <select ref={categoryIdRef}  id="categoryid" name="categoryid" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                <div className="p-2 w-full">
+                                    <div className="relative">
+                                        <label htmlFor="categoryid" className="leading-7 text-sm text-gray-600">Select Category</label>
+                                        <select ref={categoryIdRef}  id="categoryid" name="categoryid" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                                             {
                                                 categories.map(category=>
                                                     <option value={category._id}>Engine items</option>
@@ -65,20 +65,20 @@ useEffect(() => {
                                             </select>
                                     </div>
                                 </div>
-                                <div class="p-2 w-full">
-                                    <div class="relative">
-                                        <label for="categoryimg" class="leading-7 text-sm text-gray-600">Category Image</label>
-                                        <input ref={imgRef} type="file" id="categoryimg" name="categoryimg" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                                <div className="p-2 w-full">
+                                    <div className="relative">
+                                        <label htmlFor="categoryimg" className="leading-7 text-sm text-gray-600">Category Image</label>
+                                        <input ref={imgRef} type="file" id="categoryimg" name="categoryimg" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
                                     </div>
                                 </div>
-                                <div class="p-2 w-full">
-                                    <div class="relative">
-                                        <label for="categorydescription" class="leading-7 text-sm text-gray-600">Category Description</label>
-                                        <textarea ref={descriptionRef} id="categorydescription" name="categorydescription" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                                <div className="p-2 w-full">
+                                    <div className="relative">
+                                        <label htmlFor="categorydescription" className="leading-7 text-sm text-gray-600">Category Description</label>
+                                        <textarea ref={descriptionRef} id="categorydescription" name="categorydescription" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
                                     </div>
                                 </div>
-                                <div class="p-2 w-full">
-                                    <button type='submit' class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+                                <div className="p-2 w-full">
+                                    <button type='submit' className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
                                 </div>
 
                             </div>
